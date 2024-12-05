@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paytm Secure & Fast UPI Payments</title>
+    <style>
+        *{
+            margin:0%;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif
+            
+                    /* border:1px solid red;*/
+        }
+        /*nav bar section css*/
+        .navbar{
+            padding-left: 7%;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            position: sticky;
+            top: 0;
+            background-color: white;
+            box-shadow:1px 1px 10px rgba(0, 0, 0, 0.134);
+        }
+        .navbar a{
+            vertical-align: middle;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: bold;
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 3.5%;
+        }
+        .nbtn{
+            background-color: #00baf2;
+            border: none;
+            border-radius: 25px;
+            padding: 10px;
+            font-size: 17px;
+            color: white;
+            font-weight: bold;
+        }
+        .nbtn:hover{
+            background-color: #2b54a6;
+        }
+        .wallet{
+            background: color #f7f2f2;
+            text-align: center;
+            margin: 10px 20px;
+            padding:1%;
+            font-size: 17px;
+        
+        }
+        /*section 2*/
+        .sec2{
+            display: flex;
+            flex-direction: right;
+            justify-content: space-between;
+            gap: 20px;
+            margin-top: 5%;
+            margin-left: 5%;
+            margin-bottom: 5%;
+        }
+        .sec2one{
+            padding-left: 4%;
+            display: flex;
+            flex-direction: column;
+            gap: 5%;
+        }
+        .secMiddle{
+            width: 700px;
+        }
+        .head2{
+            font-size: 45px;
+        }
+        .para2{
+            font-size: 22px;
+            margin-top: 3.5%;
+            font-weight: 400;
+        }
+        .btn2{
+            background-color: black;
+            color: white;
+            border:none;
+            border-radius: 25px;
+            padding: 2.5%;
+            font-size: 15px;
+            font-weight: bold;
+            width:50%;
+            margin-top: 4%;
+            margin-bottom: 3%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .fa-google-play{
+              margin-left: 0.6%;
+        }
+        .btn2:hover{
+            background-color: white;
+            color:black;
+            border:1px solid black;
+        }
+
+        /* section-3*/
+        .sec3{
+            margin: 0px;
+            padding: 0px 50px ;
+            background-color: #55d1f7;
+            width:100vw;
+        }
+        .head3{
+            font-size: 35px;
+            font-weight: bold;
+            padding-left:50px ;
+            color: white;
+            padding-top: 3%;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding:0%;
+            overflow: none;
+        }
+        .inside{
+            width: 10%;
+            padding: 20px;
+            display:flex;
+            flex-direction:column;
+        }
+        .inside:hover{
+            display:flex;
+            flex-direction:column;
+            background-color: #4db9da;
+            border-radius: 10%;
+        }
+        .inside h5{
+            color:white;
+            font-size: 19px;
+            font-weight: bold;
+            text-align:center;
+            width:30%;
+            line-height: 30px;
+        }
+
+        /* section-4*/
+        .sec4{
+            padding: 0px 50px;
+            background-color: #2b54a6;
+            width:100vw;
+        }
+        .head4{
+            font-size: 37pxpx;
+            color: white;
+            padding-top: 3%;
+            padding-left: 5%;
+        }
+        .main{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding:2%;
+            overflow: none;
+        }
+        .inside{
+            display:flex;
+            flex-direction:column;
+        }
+        .inside:hover{
+            display:flex;
+            flex-direction:column;
+            background-color: #00000027;
+            border-radius: 10%;
+        }
+        .inside h4{
+            color:white;
+            font-size: 19px;
+            font-weight: bold;
+            text-align:center;
+            width:30%;
+            line-height: 30px;
+        }
+        
+        
+        /*section5*/
+        .sec5{
+            background-color: #2b54a6;
+            padding:6%;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .sec5one{
+            background-color: white;
+            padding:3%;
+            border-radius: 10px;
+            width:50%;
+            margin:3%;
+        }
+        .sec5one{
+            font-size: 40px;
+            margin-top: 5%;
+        }
+        .sec5one p{
+            font-size: 18px;
+            /*font-weight: bold;*/
+            margin-top: 5%;
+            margin-bottom:5%;
+        }
+        .inside{
+            font-size: 30px;
+            justify-content: space-between;
+        }
+
+         /*section6*/
+         .sec6{
+            background-color: cornflowerblue;
+            padding:6%;
+            display:flex;
+            justify-content: space-between;
+            flex-direction: row;
+            
+        }
+        .sec6one{
+            background-color: white;
+            padding:5%;
+            border-radius: 10px;
+            width:50%;
+            margin:3%;
+        }
+        .sec6one{
+            font-size: 100px;
+            margin-top: 5%;
+        }
+        .sec6one p{
+            font-size: 100px;
+            /*font-weight: bold;*/
+            margin-top: 5%;
+            margin-bottom:5%;
+        }
+        .inside{
+            font-size: 30px;
+            justify-content: space-between;
+        }
+
+         /*section7*/
+         .sec7{
+            background-color: #F5f7fa;
+            padding:2% 6%;
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .sec7one{
+            background-color: rgb(255, 255, 255);
+            padding:7% 3% 0% 3%;
+            border-radius: 10px;
+            width:40%;
+            height: 40%;
+            margin:0%;
+        }
+        .sec7one{
+            font-size: 40px;
+            margin-top: 5%;
+        }
+        .sec7one p{
+            font-size: 18px;
+            /*font-weight: bold;*/
+            margin-top: 5%;
+            margin-bottom:5%;
+        }
+        .sec7one h1{
+            font-size: 40px;
+        }
+
+        /*section 8*/
+        .sec8{
+            background-color: #F5f7fa;
+            width:100vw;
+        }
+        .head8{
+            font-size: 45px;
+            /*margin-top:5%;*/
+            padding-top: 15%;
+        }
+        .main8{
+            display:flex;
+            flex-direction: row;
+            padding:3% 6%;
+            /* text-align:center;*/
+        }
+        .inside8{
+            background-color: #fefcfc;
+            border-radius: 25px;
+            height: 70vh;
+            width:100vw;
+            margin:2%;
+            padding:2%;
+        }
+        .inside8 h1{
+            font-size:24px;
+            margin:2%;
+            padding-top: 6%;
+            padding-bottom: 4%;
+        }
+        .inside8 p{
+            font-size: 20px;
+            padding-bottom: 4%;
+        }
+        .inside8 button{
+            background-color: white;
+            border:none;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .sec{
+            display:flex;
+            flex-direction: right;
+            background-color: rgb(9, 9, 135);
+        }
+        .head8{
+            color:white;
+            margin-left: 6%;
+        }
+        .mian8{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding:10%;
+            overflow: none;
+        }
+        .inside8{
+            display:flex;
+            flex-direction: column;
+        }
+    </style>
+    <!--fav icon-->
+    <link rel="icon" href="https://offercdn.paytm.com/blog/2020/06/share-p.png"/>
+     <!--style sheet-->
+    <link rel="stylesheet" href="./style.css"/>
+     <!--fontawesome kit-->
+     <script src="https://kit.fontawesome.com/42bd7408fe.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--nav bar--><!--means navigation bar-->
+    <nav class="navbar">
+        <a href=""><img src="../images/1.png" width="10%"/></a>
+        <a href="">Paytm For Consumers</a>
+        <a href="">Paytm For Business</a>
+        <a href="">Company</a>
+        <a href="">Investor relations</a>
+        <a href="">Career</a>
+        <a href=""><button class="nbtn">Sign In <img src="../images/2.svg" alt="" width="20%" ></button></a>
+    </nav>
+    <!--wallet-->
+    <div class="wallet">
+        <p><b>No Wallet KYC Required</b>&#128522 to pay using UPI on Paytm.<b>Learn More</b></p>
+    </div>
+
+
+
+    <!--section3-->
+    <section class="sec3">
+        <h1 class="head3"  >Recharge & Pay Bills On Paytm</h1>
+        <div class="main">
+            <div class="inside">
+                <img src="../images/5.png" width="70%" style="padding-bottom: 10px;"/>
+                <h5>Recharge
+                    Prepaid
+                    Mobile
+                </h5>
+            </div>
+            
+             <div class="inside">
+                <img src="../images/6.png" width="70%"/>
+                <h5>Pay
+                    House
+                    Rent
+                </h5>
+             </div>
+             <div class="inside">
+                <img src="../images/7.png" width="70%"/>
+                <h5>Pay
+                    Electricity
+                    Bill
+                </h5>
+             </div>
+             <div class="inside">
+                <img src="../images/8.png" width="70%"/>
+                <h5>Recharge
+                    DTH
+                    Connection
+                </h5>
+            </div>
+            <div class="inside">
+                <img src="../images/9.png" width="70%"/>
+                <h5>Book
+                    Gas
+                    Cylinder
+                </h5>
+            </div>
+            <div class="inside">
+                <img src="../images/10.png" width="70%"/>
+                <h5>Credit 
+                    Card 
+                    Payment
+                </h5>
+            </div>
+            <div class="inside">
+                <img src="../images/11.png" width="70%"/>
+                <h5>All
+                    Payment
+                    Services
+                </h5>
+            </div>
+        </div>
+    </section>
+
+        <!--section 2-->
+        <section class="sec2">
+            <div class="sec2one">
+                <img src="../images/3.png" width="12%" style="box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.134); border-radius: 19%; margin-bottom: 25px;"/>
+                <h1 class="head2">India's Most Loved
+                    Payment's App</h1>
+                    <p class="para2">
+                        Recharge & Pay bills, book flights & movie tickets
+                        open savings account , invest in stocks & mutual funds
+                        and lot more
+                    </p>
+                    <button class="btn2">Download Paytm App<i class="fa-brands fa-apple"></i><i
+                         class="fa-brands fa-google-play"></i></button>
+            </div>
+            <div class="secMiddle">
+
+            </div>
+            <div class="sec2two">
+                <img src="../images/4.png" width="100%"/>
+            </div>
+        </section>
+
+    <!---section 4-->
+    <section class="sec4">
+        <h1 class="head3">Book & Buy on Paytm.</h1>
+        <div class="main">
+            <div class="inside">
+                <img src="../images/13.png" width="70%"/>
+                <h5>Flight
+                    Tickets
+                </h5>
+            </div>
+             <div class="inside">
+                <img src="../images/14.png" width="70%" style="padding-bottom: 10px;"/>
+                <h5>Bus
+                    Tickets
+                </h5>
+             </div>
+             <div class="inside">
+                <img src="../images/15.png" width="70%"/>
+                <h5>Train
+                    Tickets
+                </h5>
+             </div>
+             <div class="inside">
+                <img src="../images/16.png" width="70%"/>
+                <h5>Buy
+                    Insurance
+                </h5>
+             </div>
+             <div class="inside">
+                <img src="../images/17.png" width="70%"/>
+                <h5>International
+                    Flights
+                </h5>
+             </div>
+             <div class="inside">
+                <img src="../images/12.png" width="70%"/>
+                <h5>Movie
+                    Tickets
+                </h5>
+             </div>
+             <div class="inside">
+                <img src="../images/18.png" width="70%"/>
+                <h5>Invest
+                    in Stocks
+                </h5>
+             </div>
+             
+        </div>
+    </section>
+
+    <!---section 5-->
+    <!-- <section class="sec5">
+        <h1 class="head5">Investment</h1>
+        <div class="main">
+            <div class="inside">
+                <img src="../images/49.png" width="40%"/>
+                <h5>New Fund Offerings
+                </h5>
+            </div>
+           <div class="inside">
+             </div>
+             <div class="inside">
+                <img src="../images/21.png" width="60%"/>
+                <h5>Trending Themes
+                </h5>
+             </div>
+             <div class="inside">
+                <img src="../images/18.png" width="90%"/>
+                <h5>Start with 100
+                </h5>
+             </div>
+             
+        </div>
+    </section> -->
+
+    <!---section 6-->
+    <!-- <section class="sec6">
+        <h1 class="head6">Loans</h1>
+        <div class="main">
+            <div class="inside">
+                <img src="../images/48.png" width="40%"/>
+                <h6>Gold Loan
+                </h6>
+            </div>
+           <div class="inside">
+             </div>
+             <div class="inside">
+                <img src="../images/47.png" width="40%"/>
+                <h6>Mutual Fund Loan
+                </h6>
+             </div>
+             <div class="inside">
+                <img src="../images/6.png" width="80%"/>
+                <h6>Loan on Property
+                </h6>
+             </div>
+             
+        </div>
+    </section> -->
+
+    <!--section-7-->
+    <section class="sec7">
+        <div class="sec7one">
+            <img src="../images/25.png" width="35%" style="margin-top: -7%;"/>
+            <h1>Unlimited Cashback
+                Every Time</h1>
+                <p>Paytm HDFC Bank select credit card. A card
+                    with assured cashback and incredable offers</p>
+                    <img src="../images/26.png" width="100%" />
+            </div>
+        <div class="sec7one">
+            <img src="../images/27.png" width="35%"style="margin-top: 4%;" />
+            <h1>India's Most
+                Sincere Credit card</h1>
+            <p>Paytm SBI Card SELECT - with intelligent 
+                Features & Great Rewards that Never Expire..</p>
+                <img src="../images/28.png" width="100%"  />
+        </div>
+    </section>
+
+
+    <!--section 8-->
+    <section class="sec8">
+        <h1 class="head8" style="color: black;">Business tools to help</br> your business grow</h1>
+             <div class="main8">
+                <div class="inside8">
+                <img src="../images/40.png" width="95%"/>
+                <h1>
+                    POS Billing
+                    Software</h1>
+                   <p>Say Hello to Smart Retail
+                      Business Management</p>
+                      <Button>Learn More</Button>
+             </div>
+             <div class="inside8">
+                <img src="../images/41.png" width="95%"/>
+                <h1>
+                    POS Billing
+                    Software</h1>
+                   <p>Say Hello to Smart Retail
+                      Business Management</p>
+                      <Button>Learn More</Button>
+             </div>
+             <div class="inside8">
+                <img src="../images/42.png" width="95%"/>
+                <h1>
+                    POS Billing
+                    Software</h1>
+                   <p>Say Hello to Smart Retail
+                      Business Management</p>
+                      <Button>Learn More</Button>
+             </div>
+             <div class="inside8">
+                <img src="../images/43.png" width="95%"/>
+                <h1>
+                    POS Billing
+                    Software</h1>
+                   <p>Say Hello to Smart Retail
+                      Business Management</p>
+                      <Button>Learn More</Button>
+             </div>
+
+    </section>
+    <!--section 7-->
+    <section class="sec7">
+        <!-- <h1 class="head7">Book & Buy On Paytm.</h1>
+        <div class="main7">
+            <div class="inside7">
+            <img src="../images/51.png" width="45%"/>
+            <h5>Movie
+                Tickets</h6>
+        </div>
+        </div>
+    
+    </section> -->
+    
+</body>
+</html>
